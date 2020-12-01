@@ -11,7 +11,7 @@ namespace NovemberProjekt
         string category;
         bool cursed;
         Random generator = new Random();
-        List<string> nameList = new List<string>(){"Ex Altiora", "The Boneturner's Tale"};
+        List<string> nameList = new List<string>(){"Ex Altiora", "The Boneturner's Tale","Book of The Dead"};
         public Book(){
 
             actualValue = generator.Next(1,101);
