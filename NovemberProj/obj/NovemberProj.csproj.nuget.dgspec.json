@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emma.jerlin\\Dropbox\\Min PC (CND8261PB2)\\Documents\\NovemberProjekt\\NovemberProj\\NovemberProj.csproj": {}
+    "C:\\Users\\emma.jerlin\\Documents\\NovemberProjekt\\NovemberProj\\NovemberProj.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emma.jerlin\\Dropbox\\Min PC (CND8261PB2)\\Documents\\NovemberProjekt\\NovemberProj\\NovemberProj.csproj": {
+    "C:\\Users\\emma.jerlin\\Documents\\NovemberProjekt\\NovemberProj\\NovemberProj.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emma.jerlin\\Dropbox\\Min PC (CND8261PB2)\\Documents\\NovemberProjekt\\NovemberProj\\NovemberProj.csproj",
+        "projectUniqueName": "C:\\Users\\emma.jerlin\\Documents\\NovemberProjekt\\NovemberProj\\NovemberProj.csproj",
         "projectName": "NovemberProj",
-        "projectPath": "C:\\Users\\emma.jerlin\\Dropbox\\Min PC (CND8261PB2)\\Documents\\NovemberProjekt\\NovemberProj\\NovemberProj.csproj",
+        "projectPath": "C:\\Users\\emma.jerlin\\Documents\\NovemberProjekt\\NovemberProj\\NovemberProj.csproj",
         "packagesPath": "C:\\Users\\emma.jerlin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emma.jerlin\\Dropbox\\Min PC (CND8261PB2)\\Documents\\NovemberProjekt\\NovemberProj\\obj\\",
+        "outputPath": "C:\\Users\\emma.jerlin\\Documents\\NovemberProjekt\\NovemberProj\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emma.jerlin\\AppData\\Roaming\\NuGet\\NuGet.Config",

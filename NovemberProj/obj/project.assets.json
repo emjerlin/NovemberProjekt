@@ -136,11 +136,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\emma.jerlin\\Dropbox\\Min PC (CND8261PB2)\\Documents\\NovemberProjekt\\NovemberProj\\NovemberProj.csproj",
+      "projectUniqueName": "C:\\Users\\emma.jerlin\\Documents\\NovemberProjekt\\NovemberProj\\NovemberProj.csproj",
       "projectName": "NovemberProj",
-      "projectPath": "c:\\Users\\emma.jerlin\\Dropbox\\Min PC (CND8261PB2)\\Documents\\NovemberProjekt\\NovemberProj\\NovemberProj.csproj",
+      "projectPath": "C:\\Users\\emma.jerlin\\Documents\\NovemberProjekt\\NovemberProj\\NovemberProj.csproj",
       "packagesPath": "C:\\Users\\emma.jerlin\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\emma.jerlin\\Dropbox\\Min PC (CND8261PB2)\\Documents\\NovemberProjekt\\NovemberProj\\obj\\",
+      "outputPath": "C:\\Users\\emma.jerlin\\Documents\\NovemberProjekt\\NovemberProj\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\emma.jerlin\\AppData\\Roaming\\NuGet\\NuGet.Config",

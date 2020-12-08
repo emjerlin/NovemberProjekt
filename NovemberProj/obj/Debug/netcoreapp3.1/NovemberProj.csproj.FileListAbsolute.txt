@@ -18,3 +18,23 @@ C:\Users\emma.jerlin\Dropbox\Min PC (CND8261PB2)\Documents\NovemberProjekt\Novem
 C:\Users\emma.jerlin\Dropbox\Min PC (CND8261PB2)\Documents\NovemberProjekt\NovemberProj\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\raylib.dll
 C:\Users\emma.jerlin\Dropbox\Min PC (CND8261PB2)\Documents\NovemberProjekt\NovemberProj\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\raylib.dll
 C:\Users\emma.jerlin\Dropbox\Min PC (CND8261PB2)\Documents\NovemberProjekt\NovemberProj\obj\Debug\netcoreapp3.1\NovemberProj.csproj.CopyComplete
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\bin\Debug\netcoreapp3.1\NovemberProj.exe
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\bin\Debug\netcoreapp3.1\NovemberProj.deps.json
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\bin\Debug\netcoreapp3.1\NovemberProj.runtimeconfig.json
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\bin\Debug\netcoreapp3.1\NovemberProj.runtimeconfig.dev.json
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\bin\Debug\netcoreapp3.1\NovemberProj.dll
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\bin\Debug\netcoreapp3.1\NovemberProj.pdb
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\bin\Debug\netcoreapp3.1\Raylib-cs.dll
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libraylib.so
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libraylib.so
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libraylib.dylib
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\raylib.dll
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\raylib.dll
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\obj\Debug\netcoreapp3.1\NovemberProj.csprojAssemblyReference.cache
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\obj\Debug\netcoreapp3.1\NovemberProj.AssemblyInfoInputs.cache
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\obj\Debug\netcoreapp3.1\NovemberProj.AssemblyInfo.cs
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\obj\Debug\netcoreapp3.1\NovemberProj.csproj.CoreCompileInputs.cache
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\obj\Debug\netcoreapp3.1\NovemberProj.csproj.CopyComplete
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\obj\Debug\netcoreapp3.1\NovemberProj.dll
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\obj\Debug\netcoreapp3.1\NovemberProj.pdb
+C:\Users\emma.jerlin\Documents\NovemberProjekt\NovemberProj\obj\Debug\netcoreapp3.1\NovemberProj.genruntimeconfig.cache
