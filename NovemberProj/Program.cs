@@ -24,22 +24,18 @@ namespace NovemberProjekt
             Rectangle roadVertical = new Rectangle(320,200,60,400);
             Rectangle aDoor = new Rectangle (670,560,60,50);
             Rectangle sDoor = new Rectangle (325,270,60,50);
-
-                Raylib.BeginDrawing();
-
-                Rectangle player = new Rectangle(posX,posY,20,20);
+            Rectangle player = new Rectangle(posX,posY,20,20);
 
                 if (room == "hs") {
-                    DrawHomescreen(background1, background2, background3,background4, background5, roadHorizontal, roadVertical, aDoor, sDoor);
+                    DrawHomescreen(player, background1, background2, background3,background4, background5, roadHorizontal, roadVertical, aDoor, sDoor);
                 }
                 if (room == "a"){
-                    DrawAntique();
+                    DrawAntique(player);
                 }
                 if (room == "s"){
-                    DrawSecond();
+                    DrawSecond(player);
                 }
-
-                Raylib.DrawRectangleRec(player,Color.PURPLE);
+                
 
                 //player controls
                 if (Raylib.IsKeyDown(KeyboardKey.KEY_LEFT))
@@ -100,7 +96,6 @@ namespace NovemberProjekt
                      
                      b1.PrintInfo();
                 }
-                Raylib.EndDrawing();
             
 
             //Console.WriteLine("Welcome to your first day of many at the antiquary");
@@ -117,8 +112,11 @@ namespace NovemberProjekt
             //Console.ReadLine();
             }
         }
-        static void DrawHomescreen(Rectangle background1, Rectangle background2,Rectangle background3,
+        static void DrawHomescreen(Rectangle player, Rectangle background1, Rectangle background2,Rectangle background3,
         Rectangle background4,Rectangle background5, Rectangle roadVertical, Rectangle roadHorizontal, Rectangle aDoor, Rectangle sDoor){
+            
+             Raylib.BeginDrawing();
+
             Raylib.ClearBackground(Color.WHITE);
                 
             Raylib.DrawRectangleRec(background1,Color.GRAY);
@@ -139,15 +137,26 @@ namespace NovemberProjekt
             Raylib.DrawRectangle(500,410,400,200,Color.PURPLE);
             Raylib.DrawRectangleRec(aDoor,Color.BLACK);
             Raylib.DrawText("ANTIQUARY", 590, 450, 35, Color.BLACK);
+              Raylib.DrawRectangleRec(player,Color.PURPLE);
+
+             Raylib.EndDrawing();
+
         
         }
-        static void DrawAntique(){
+        static void DrawAntique(Rectangle player){
+             Raylib.BeginDrawing();
             Raylib.ClearBackground(Color.WHITE);
              Raylib.DrawText("Antiquary", 60, 80, 40, Color.BLACK);
+              Raylib.DrawRectangleRec(player,Color.PURPLE);
+              Raylib.EndDrawing();
+
         }
-        static void DrawSecond(){
+        static void DrawSecond(Rectangle player){
+            Raylib.BeginDrawing();
             Raylib.ClearBackground(Color.WHITE);
              Raylib.DrawText("Second hand", 60, 80, 40, Color.BLACK);
+              Raylib.DrawRectangleRec(player,Color.PURPLE);
+              Raylib.EndDrawing();
         }
     }
 }
