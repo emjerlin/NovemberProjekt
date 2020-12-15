@@ -55,7 +55,10 @@ namespace NovemberProjekt
                     posY--;
                 }
 
+                //lägga in if för specifika rummen !!!!
+
                 //player stays on road
+                if (room == "hs"){
                 bool isCollidingBG1 = Raylib.CheckCollisionRecs(background1, player);
                 bool isCollidingBG2 = Raylib.CheckCollisionRecs(background2, player);
                 bool isCollidingBG3 = Raylib.CheckCollisionRecs(background3, player);
@@ -78,7 +81,7 @@ namespace NovemberProjekt
                 if (isCollidingBG5 == true){
                     posX--;
                 }
-
+                
                 //player enters antiquary
                 bool aDoorCollide = Raylib.CheckCollisionRecs(aDoor, player);
                 if (aDoorCollide == true){
@@ -89,7 +92,8 @@ namespace NovemberProjekt
                 if (sDoorCollide == true){
                     room = "s";
                 }
-                
+                }
+
                 //display stats for books - transfer to second hand store
                 if (Raylib.IsKeyPressed(KeyboardKey.KEY_SPACE)){
                      Book b1 = new Book();
