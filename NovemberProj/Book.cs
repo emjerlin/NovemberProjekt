@@ -7,7 +7,7 @@ namespace NovemberProjekt
     {
         public int price;
         int actualValue;
-        string name;
+        public string name;
         int rarity;
         string category;
         bool cursed;

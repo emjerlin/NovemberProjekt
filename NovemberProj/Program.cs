@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Raylib_cs;
 
 namespace NovemberProjekt
@@ -12,6 +13,11 @@ namespace NovemberProjekt
             int posX = 330;
             int posY = 610;
             string room = "hs";
+            int game = 0;
+            
+            while (game == 0){
+            
+            List<string> inventory = new List<string>(){};
 
             while (!Raylib.WindowShouldClose()){
 
@@ -33,7 +39,7 @@ namespace NovemberProjekt
                     DrawAntique(player);
                 }
                 if (room == "s"){
-                    DrawSecond(player);
+                    DrawSecond();
                 }
                 
 
@@ -92,15 +98,51 @@ namespace NovemberProjekt
                 if (sDoorCollide == true){
                     room = "s";
                 }
+                 if(room=="a"){
+                    DrawAntique(player);
                 }
+                 if(room=="s"){
+                    Raylib.CloseWindow();
 
-                //display stats for books - transfer to second hand store
-                if (Raylib.IsKeyPressed(KeyboardKey.KEY_SPACE)){
+                    Console.Clear();
+                    int length = inventory.Count;
+                    if (length > 0){
+                    Console.WriteLine("You have " + inventory[0] + " in your inventory");
+                    }
+                    else {
+                    Console.WriteLine("You don't have anything in your inventory");
+                    }
+                    
+                    Console.WriteLine("Welcome to the second hand store. Would you like to buy a book? [ y / n ]");
+                    string input = Console.ReadLine();
+
+                     if (input == "y"){
                      Book b1 = new Book();
-                     
+                     Console.WriteLine("You found a new book!");
+                     int decisions = 0;
+
+                     while (decisions == 0){
+                     Console.WriteLine("Here are your options:");
+                     Console.WriteLine(" [print info] to see the rarity level, price, and cathegory of the book");
+                     Console.WriteLine(" [buy] to buy the book ");
+                     Console.WriteLine("");
+                    string choose = Console.ReadLine();
+                 
+                     if (choose == "print info"){
                      b1.PrintInfo();
+                    }  
+                     if (choose == "buy"){
+                    inventory.Add(b1.name);
                 }
-            
+                }
+            }
+            }
+            }
+
+      }
+
+               // Second hand
+               
 
             //Console.WriteLine("Welcome to your first day of many at the antiquary");
             //Planen är att man ska kunna gå från rum till rum i en affär, och kunna plocka upp böcker som man kan köpa.
@@ -148,19 +190,17 @@ namespace NovemberProjekt
         
         }
         static void DrawAntique(Rectangle player){
-             Raylib.BeginDrawing();
-            Raylib.ClearBackground(Color.WHITE);
-             Raylib.DrawText("Antiquary", 60, 80, 40, Color.BLACK);
-              Raylib.DrawRectangleRec(player,Color.PURPLE);
-              Raylib.EndDrawing();
+            Raylib.BeginDrawing();
+            Raylib.ClearBackground(Color.BLACK);
+            Raylib.DrawText("Antiquary", 60, 80, 40, Color.WHITE);
+            Raylib.EndDrawing();
 
         }
-        static void DrawSecond(Rectangle player){
-            Raylib.BeginDrawing();
-            Raylib.ClearBackground(Color.WHITE);
-             Raylib.DrawText("Second hand", 60, 80, 40, Color.BLACK);
-              Raylib.DrawRectangleRec(player,Color.PURPLE);
-              Raylib.EndDrawing();
+        static void DrawSecond(){
+            
+            //display stats for books - transfer to second hand store
+                
+
         }
     }
 }
