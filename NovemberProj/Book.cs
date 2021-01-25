@@ -13,6 +13,8 @@ namespace NovemberProjekt
         bool cursed;
         Random generator = new Random();
         List<string> nameList = new List<string>(){"Ex Altiora", "The Boneturner's Tale","Book of The Dead"};
+        //kategorin kommer alltid ha samma plats i listan som boken som har den kategorin
+        List<string> categoryList = new List<string>(){"Poetry","Fantasy","Horror"};
         public Book(){
 
             actualValue = generator.Next(1,101);
@@ -29,6 +31,8 @@ namespace NovemberProjekt
             int y = length--;
             int x = generator.Next(0,y);
             name = nameList[x];
+            category = categoryList[x];
+
         }
 
 
