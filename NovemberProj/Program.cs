@@ -12,8 +12,22 @@ namespace NovemberProjekt
             string room = "hs";
             int totalBooks = 0; //total books ska inte minska när man säljer en bok - det är hur många man haft någonsin
             bool locked = true;
+            int length = 0;
             int game = 0;
             List<string> inventory = new List<string>(){};
+            List<string> antiqueStorage = new List<string>(){};
+
+             Book b1 = new Book();
+                    
+            Book b2 = new Book();
+                     
+            Book b3 = new Book();
+                     
+            Book b4 = new Book();
+                     
+            Book b5 = new Book();
+                     
+            Book b6 = new Book();
             
             while (game == 0){
                 // Jag vill att den ska köra om härifrån varje gång man går tillbaka till hs / Kunna lägga
@@ -102,32 +116,56 @@ namespace NovemberProjekt
                 
                  if(room=="a"){
                     //Raylib.CloseWindow();
-                    Console.Clear();
                     Console.WriteLine("Youre in the antiquary. Would you like to drop off the books in your inventory? [y/n]");
                     string dropCheck = Console.ReadLine();
                     if (dropCheck == "y"){
+                        Console.WriteLine("You have dropped off ");
+                        
+                        for(int i = inventory.Count - 1; i>-1;i--){
+                              Console.WriteLine(inventory[i]);
+                        }
+                         if (totalBooks == 6){
+                         inventory.Remove(b6.name);
+                         antiqueStorage.Add(b6.name);
+                        }
+                        if (totalBooks ==5){
+                        inventory.Remove(b5.name);
+                         antiqueStorage.Add(b5.name);
+                        }
+                        if (totalBooks ==4){
+                         inventory.Remove(b4.name);
+                         antiqueStorage.Add(b4.name);
+                        }
+                        if (totalBooks ==3){
+                        inventory.Remove(b3.name);
+                         antiqueStorage.Add(b3.name);
+                        }
+                        if (totalBooks ==2){
+                        inventory.Remove(b2.name);
+                         antiqueStorage.Add(b2.name);
+                        }
+                        if (totalBooks == 1){
+                         inventory.Remove(b1.name);
+                         antiqueStorage.Add(b1.name);
+                        }// Jag är medveten om att detta kodblock kommer bete sig konstigt om man har gett upp en bok tidigare, men detta är 
+                        //bästa lösningen jag kan hitta just nu
 
+                        for(int i = antiqueStorage.Count - 1; i>-1;i--){
+                                Console.WriteLine("Set a price to sell " + antiqueStorage[i] + " for.");
+                                Console.ReadLine();
+                        }
+                      
+                        
                     }
                     else if (dropCheck == "n"){
 
                     }
                  }
                  if(room=="s"){
-                     Book b1 = new Book();
-                    
-                     Book b2 = new Book();
-                     
-                     Book b3 = new Book();
-                     
-                     Book b4 = new Book();
-                     
-                     Book b5 = new Book();
-                     
-                     Book b6 = new Book();
                      
                     //Raylib.CloseWindow();
                     Console.Clear();
-                    int length = inventory.Count;
+                    length = inventory.Count;
                     
                     while (length < 3){
                     if (length > 0){
