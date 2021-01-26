@@ -5,8 +5,8 @@ namespace NovemberProjekt
 {
     public class Book
     {
-        public int price;
-        int actualValue;
+        public int priceToBuy;
+        public int priceToSell;
         public string name;
         int rarity;
         string category;
@@ -17,7 +17,7 @@ namespace NovemberProjekt
         List<string> categoryList = new List<string>(){"Poetry","Fantasy","Horror","Horror","Non-fiction"};
         public Book(){
 
-            actualValue = generator.Next(1,101);
+            priceToBuy = generator.Next(1,101);
             rarity = generator.Next(1,11);
 
             int b = generator.Next(2);
@@ -40,7 +40,7 @@ namespace NovemberProjekt
             Console.WriteLine(name);
             Console.WriteLine("Rarity level: " + rarity);
             Console.WriteLine("Category: " + category);
-            Console.WriteLine("Price: " + price);
+            Console.WriteLine("Price: " + priceToBuy);
         }
     }
 }

@@ -10,6 +10,7 @@ namespace NovemberProjekt
         static void Main(string[] args)
         {
             string room = "hs";
+            int money = 200;
             int totalBooks = 0; //total books ska inte minska när man säljer en bok - det är hur många man haft någonsin
             bool locked = true;
             int length = 0;
@@ -17,7 +18,7 @@ namespace NovemberProjekt
             List<string> inventory = new List<string>(){};
             List<string> antiqueStorage = new List<string>(){};
 
-             Book b1 = new Book();
+            Book b1 = new Book();
                     
             Book b2 = new Book();
                      
@@ -114,8 +115,8 @@ namespace NovemberProjekt
                 }//room is hs
 
                 
+
                  if(room=="a"){
-                    //Raylib.CloseWindow();
                     Console.WriteLine("Youre in the antiquary. Would you like to drop off the books in your inventory? [y/n]");
                     string dropCheck = Console.ReadLine();
                     if (dropCheck == "y"){
@@ -154,13 +155,13 @@ namespace NovemberProjekt
                                 Console.WriteLine("Set a price to sell " + antiqueStorage[i] + " for.");
                                 Console.ReadLine();
                         }
-                      
-                        
                     }
                     else if (dropCheck == "n"){
 
                     }
                  }
+
+                 
                  if(room=="s"){
                      
                     //Raylib.CloseWindow();
@@ -177,7 +178,7 @@ namespace NovemberProjekt
                     }
                     
                     
-                    Console.WriteLine("Welcome to the second hand store. Would you like to buy a book? [ y / n ] ");
+                    Console.WriteLine("Welcome to the second hand store. Would you like to buy a book? [ y / n ]. Your balance is " + money + "$");
                     Console.WriteLine("You can have a maximum of three books in your inventory, after that you have to drop them off at the antiquary");
                     string input = Console.ReadLine();
                     
@@ -220,15 +221,19 @@ namespace NovemberProjekt
                             Console.Clear();
                             Console.WriteLine("You pay the second hand shop for the book, and put it in your bag");
                         if (totalBooks == 0){
+                         money = money - b1.priceToBuy;
                          inventory.Add(b1.name);
                         }
                         if (totalBooks == 1){
+                         money = money - b2.priceToBuy;
                          inventory.Add(b2.name);
                         }
                         if (totalBooks == 2){
+                         money = money - b3.priceToBuy;
                          inventory.Add(b3.name);
                         }
                         if (totalBooks == 3){
+                         money = money - b4.priceToBuy;
                          inventory.Add(b4.name);
                         }
                         if (totalBooks == 4){
